@@ -1,30 +1,32 @@
 // My Scripts
 
 
-// Data source
-const url = "https://picsum.photos/v2/list";
+// Data source from Webflow
+const url = "https://v1.nocodeapi.com/pmanikoth/webflow/wtzODovSIJsRXhZg";
 
 // Get data
 fetch(url)
-  .then( response => response.json() )
+  .then( response  => response.json())
   .then( data  => {
-    // check-check
-    console.log(data);
-    
-    // Get Parent
-    const container = document.querySelector('main');
-     
-    // Loop through each item
-    data.forEach( ( item ) => {
-      
-     const template = `
-     <figure>
-        <img src=${item.src = item.download_url} />  
-        <figcaption>${item.author}</figcaption>
-     </figure>
-     `
-     // Dynamicaly insert into the DOM
-      container.insertAdjacentHTML('afterbegin', template);
+    // check-check: get one image
+    // Note: Webflow returns data in array called `items`
+    console.log(data.items[0].image.url);
 
+    // get container for data
+    const gallery = document.querySelector(".gallery");
+
+    //
+    data.items.forEach( student => {
+      
+      // template
+      const template = `
+          <figure>
+            <figcaption>Student</figcaption>
+            <img src="${student.image.url}" alt="Placeholder" />
+          </figure>
+       `;
+
+      // insert EACH `student` record into container
+      gallery.insertAdjacentHTML("afterbegin", template);
     });
   });
