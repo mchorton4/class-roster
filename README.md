@@ -1,3 +1,5 @@
+![screenshot of app](URL to image)
+
 # Class Roster via our API data
 
 ## What Is This? 
