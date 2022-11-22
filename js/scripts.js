@@ -1,8 +1,9 @@
 // My Scripts
 
 
-// Data source from Webflow
-const url = "https://v1.nocodeapi.com/pmanikoth/webflow/wtzODovSIJsRXhZg";
+// Data source from AirTable API
+// Note: We're using NoCode API to make connecting to AirTable easier
+const url = "https://v1.nocodeapi.com/pmanikoth/airtable/rsqhQzAAKcMyyPPW?tableName=Roster";
 
 // Get data
 fetch(url)
@@ -10,19 +11,25 @@ fetch(url)
   .then( data  => {
     // check-check: get one image
     // Note: Webflow returns data in array called `items`
-    console.log(data.items[0].image.url);
+    console.log(data.records);
+    console.log(data.records[0].fields);
+    console.log(data.records[0].fields.Name);
+    console.log(data.records[0].fields.Emoji);
+    console.log(data.records[0].fields.Color);
+    console.log(data.records[0].fields.Image[0].url);
 
     // get container for data
     const gallery = document.querySelector(".gallery");
 
-    //
-    data.items.forEach( student => {
+    // loop through data
+    data.records.forEach( student => {
       
       // template
       const template = `
           <figure>
-            <figcaption>Student</figcaption>
-            <img src="${student.image.url}" alt="Placeholder" />
+            <figcaption>${student.fields.Name}</figcaption>
+            <p>${student.fields.Emoji}</p>
+            <img src="${student.fields.Image[0].url}" alt="${student.fields.Name}">
           </figure>
        `;
 
