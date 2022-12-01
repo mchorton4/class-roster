@@ -18,7 +18,7 @@ API endpoint for the _Collection_ for Student submitted data.
 `https://v1.nocodeapi.com/pmanikoth/airtable/rsqhQzAAKcMyyPPW?tableName=Roster`
 
 ## Sources
-List your sources here
+
 * [AirTable](https://airtable.com/)
 * [Font Share](https://www.fontshare.com/)
 * [Favicon](https://favicon.io/favicon-converter/)
