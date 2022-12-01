@@ -44,7 +44,6 @@ body{
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    padding: 3% 8% 3% 8%;
     max-width: 4000px;
 }
 
@@ -55,16 +54,11 @@ figure{
     padding: 15px 15px 30px;
     text-align: center;
     box-shadow: 0 7px 8px rgba(0, 0, 0, .3);
-    -webkit-transition: all .20s linear;
-    -moz-transition: all .20s linear;
-    transition: all .20s linear;
-    position: static;
+    position: relative;
   }
 
 figcaption{
     position: center;
-    top: 85%;
-   left: 5%;
     color: #67a369;
     font-family: 'Gambarino-Regular';
     font-size: 2em;
@@ -77,7 +71,6 @@ img{
     height: var(--container-height);
     object-fit: cover;
     transform: scale(1);
-    
 }
 
 
