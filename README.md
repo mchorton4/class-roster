@@ -1,4 +1,4 @@
-![Screenshot of Roster](https://github.com/mchorton4/class-roster/blob/main/Screenshot%20Roster%20.png?raw=true)
+![Screenshot of Roster](https://github.com/mchorton4/class-roster/blob/main/classroster.jpg?raw=true)
 
 
 # Class Roster via our API data
@@ -18,7 +18,7 @@ API endpoint for the _Collection_ for Student submitted data.
 `https://v1.nocodeapi.com/pmanikoth/airtable/rsqhQzAAKcMyyPPW?tableName=Roster`
 
 ## Sources
-List your sources here
+
 * [AirTable](https://airtable.com/)
 * [Font Share](https://www.fontshare.com/)
 * [Favicon](https://favicon.io/favicon-converter/)
