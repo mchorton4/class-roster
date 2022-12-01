@@ -20,8 +20,8 @@ API endpoint for the _Collection_ for Student submitted data.
 ## Sources
 List your sources here
 
-[Font Share](https://www.fontshare.com/)
-[Favicon](https://favicon.io/favicon-converter/)
+# [Font Share](https://www.fontshare.com/)
+# [Favicon](https://favicon.io/favicon-converter/)
 
 ## Why Does This Exist? 
 Thre are many have a no-code CMS, and GUIs for designing the templates. AirTable (and many others) also have an API that is accessible as a _headless CMS_. 
