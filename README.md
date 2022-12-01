@@ -1,4 +1,4 @@
-![Screenshot of Roster]()
+![Screenshot of Roster](https://github.com/mchorton4/class-roster/blob/main/classroster.jpg?raw=true)
 
 
 # Class Roster via our API data
